@@ -24,4 +24,9 @@ public class TestController {
         }, HttpStatus.OK);
     }
 
+    @RequestMapping(value = "bool", method = RequestMethod.GET)
+    public ResponseEntity<Boolean> obtenerValorBooleano(){
+        return new ResponseEntity<Boolean>(Boolean.TRUE, HttpStatus.OK);
+    }
+    
 }

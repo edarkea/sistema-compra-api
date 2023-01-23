@@ -19,7 +19,7 @@ public class CompraApplication {
 
     @EnableWebSecurity
     @Configuration
-    class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+    public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         @Override
         protected void configure(HttpSecurity http) throws Exception {
